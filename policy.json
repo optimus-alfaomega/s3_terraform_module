@@ -1,0 +1,18 @@
+{
+    "Id": "Policy1234567890123",
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "Statement1",
+        "Action": [
+            "s3:GetObject",
+            "s3:PutObject",
+            "s3:ListBucket",
+            "s3:PutObjectAcl"
+        ],
+        "Effect": "Allow",
+        "Resource": "arn:aws:s3:::s3-website-test.hashi.com.co/*",
+        "Principal": "*"
+      }
+    ]
+  }
